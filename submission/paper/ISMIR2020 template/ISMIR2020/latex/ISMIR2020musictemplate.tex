@@ -1,0 +1,209 @@
+% -----------------------------------------------
+% Template for ISMIR Papers
+% 2020 version, based on previous ISMIR templates
+
+% Requirements :
+% * 6+n page length maximum
+% * 4MB maximum file size
+% * Copyright note must appear in the bottom left corner of first page
+% * Clearer statement about citing own work in anonymized submission
+% (see conference website for additional details)
+% -----------------------------------------------
+
+\documentclass{article}
+\usepackage[T1]{fontenc} % add special characters (e.g., umlaute)
+\usepackage[utf8]{inputenc} % set utf-8 as default input encoding
+\usepackage{ismir,amsmath,cite,url}
+\usepackage{graphicx}
+\usepackage{color}
+
+% Optional: To use hyperref, uncomment the following.
+% \usepackage[bookmarks=false,hidelinks]{hyperref}
+% Mind the bookmarks=false option; bookmarks are incompatible with ismir.sty.
+
+% \usepackage{lineno}
+% \linenumbers
+
+% Title.
+% ------
+\title{Music Submission Template For ISMIR \conferenceyear}
+
+% Note: Please do NOT use \thanks or a \footnote in any of the author markup
+
+% Single address
+% To use with only one author or several with the same address
+% ---------------
+\oneauthor
+{Composer} {Affiliation1 \\ {\tt author1@ismir.edu}}
+
+% Two addresses
+% --------------
+%\twoauthors
+%  {First author} {School \\ Department}
+%  {Second author} {Company \\ Address}
+
+%% To make customize author list in Creative Common license, uncomment and customize the next line
+%  \def\authorname{First Author, Second Author}
+
+
+% Three addresses
+% --------------
+% \threeauthors
+%   {First Author} {Affiliation1 \\ {\tt author1@ismir.edu}}
+%   {Second Author} {\bf Retain these fake authors in\\\bf submission to preserve the formatting}
+%   {Third Author} {Affiliation3 \\ {\tt author3@ismir.edu}}
+
+%% To make customize author list in Creative Common license, uncomment and customize the next line
+%  \def\authorname{First Author, Second Author, Third Author}
+
+% Four or more addresses
+% OR alternative format for large number of co-authors
+% ------------
+%\multauthor
+%{First author$^1$ \hspace{1cm} Second author$^1$ \hspace{1cm} Third author$^2$} { \bfseries{Fourth author$^3$ \hspace{1cm} Fifth author$^2$ \hspace{1cm} Sixth author$^1$}\\
+%  $^1$ Department of Computer Science, University , Country\\
+%$^2$ International Laboratories, City, Country\\
+%$^3$  Company, Address\\
+%{\tt\small CorrespondenceAuthor@ismir.edu, PossibleOtherAuthor@ismir.edu}
+%}
+%\def\authorname{First author, Second author, Third author, Fourth author, Fifth author, Sixth author}
+
+
+\sloppy % please retain sloppy command for improved formatting
+
+\begin{document}
+
+%
+\maketitle
+%
+\begin{abstract}
+
+The abstract should contain about 150-200 words.
+\end{abstract}
+%
+\section{Introduction}\label{sec:introduction}
+ISMIR Conference participants are warmly invited to submit pieces from any musical genre and in any style of electronic, acoustic, or mixed electroacoustic music that explores the notion of music information in the widest sense of the term. Contributors are encouraged to explore the use of AI-driven systems to improvise or play along with humans, generate or assist the process of composition, or to perform common music information retrieval tasks such as audio mosaicing, harmonization, intelligent looping, and others.
+
+\section{Description of the musical work}
+
+Each music submission must include a description of the composition using this template.  You must specify the technical needs for the performance at ISMIR 2020, including a stage plot and list of channels. We encourage you to explain the concepts and techniques you used for the piece, its compositional process, and any aspects you think are relevant for the ISMIR community.
+
+ 
+
+
+
+\section{Links to the musical work}
+It is mandatory to submit a link to an online resource where the musical work (or a realisation for a generative or performative piece) can be listened by the reviewing committee. 
+
+\section{Review Process}
+
+Submissions will be evaluated by the ISMIR2020 Music Program Committee and a panel of experts in music research chosen by the committee.
+
+
+\section{Music Submission}
+
+\subsection{Template}\label{subsec:template}
+This template includes all the information to make a music submission for the ISMIR \conferenceyear\ Conference.
+Most of the required formatting is achieved automatically by using the supplied style file (\LaTeX) or template (Word).
+Each music application will be submitted through the ISMIR CMT system (\texttt{https://cmt3.research.microsoft.com/ISMIR2020}). 
+
+\subsection{File size}\label{subsec:size}
+The document should be submitted as PDFs and the file size is limited to 4MB. Please compress images and figures as necessary before submitting.
+
+\subsection{Length of the musical work and number of submissions}
+Submissions of 15 or fewer minutes are preferred, however music of any length will be considered.
+Only one submission per composer will be accepted.
+
+\subsection{Questions}\label{subsec:questions}
+If you have any questions in regard to the submission, please contact the ISMIR2020 Music Program Committee (\texttt{ismir\conferenceyear-music@ismir.net}).
+
+\section{First Level Headings}
+
+First level headings are in Times 10pt bold,
+centered with 1 line of space above the section head, and 1/2 space below it.
+For a section header immediately followed by a subsection header, the space should be merged.
+
+\subsection{Second Level Headings}
+
+Second level headings are in Times 10pt bold, flush left,
+with 1 line of space above the section head, and 1/2 space below it.
+The first letter of each significant word is capitalized.
+
+% \subsubsection{Third and Further Level Headings}
+
+% Third level headings are in Times 10pt italic, flush left,
+% with 1/2 line of space above the section head, and 1/2 space below it.
+% The first letter of each significant word is capitalized.
+
+% Using more than three levels of headings is highly discouraged.
+
+\section{Footnotes and Figures}
+
+\subsection{Footnotes}
+
+Indicate footnotes with a number in the text.\footnote{This is a footnote.}
+Use 8pt type for footnotes. Place the footnotes at the bottom of the page on which they appear.
+Precede the footnote with a 0.5pt horizontal rule.
+
+
+
+\begin{table}
+ \begin{center}
+ \begin{tabular}{|l|l|}
+  \hline
+  String value & Numeric value \\
+  \hline
+  Hello ISMIR  & \conferenceyear \\
+  \hline
+ \end{tabular}
+\end{center}
+ \caption{Table captions should be placed below the table.}
+ \label{tab:example}
+\end{table}
+
+\begin{figure}
+ \centerline{\framebox{
+ \includegraphics[width=0.5\columnwidth]{figure.png}}}
+ \caption{Figure captions should be placed below the figure.}
+ \label{fig:example}
+\end{figure}
+
+
+
+\section{Citations}
+
+All bibliographical references should be listed at the end,
+inside a section named ``REFERENCES,'' numbered and in alphabetical order.
+All references listed should be cited in the text.
+When referring to a document, type the number in square brackets
+\cite{Author:00}, or for a range \cite{Author:00,Someone:10,Someone:04}.
+
+When the following words appear in the conference publication titles, please abbreviate them: Proceedings $\rightarrow$ Proc.; Record $\rightarrow$ Rec.; Symposium $\rightarrow$ Symp.; Technical Digest $\rightarrow$ Tech. Dig.; Technical Paper $\rightarrow$ Tech. Paper; First $\rightarrow$ 1st; Second $\rightarrow$ 2nd; Third $\rightarrow$ 3rd; Fourth/nth $\rightarrow$ 4th/nth.
+
+
+
+% For bibtex users:
+\bibliography{ISMIRtemplate}
+
+% For non bibtex users:
+%\begin{thebibliography}{citations}
+%
+%\bibitem {Author:00}
+%E. Author.
+%``The Title of the Conference Paper,''
+%{\it Proceedings of the International Symposium
+%on Music Information Retrieval}, pp.~000--111, 2000.
+%
+%\bibitem{Someone:10}
+%A. Someone, B. Someone, and C. Someone.
+%``The Title of the Journal Paper,''
+%{\it Journal of New Music Research},
+%Vol.~A, No.~B, pp.~111--222, 2010.
+%
+%\bibitem{Someone:04} X. Someone and Y. Someone. {\it Title of the Book},
+%    Editorial Acme, Porto, 2012.
+%
+%\end{thebibliography}
+
+\end{document}
+
